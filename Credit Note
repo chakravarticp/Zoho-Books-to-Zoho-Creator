@@ -1,0 +1,18 @@
+
+mp = Map();
+info creditnote;
+customer = creditnote.get("customer_name");
+creditnumber = creditnote.get("creditnote_number");
+date = creditnote.get("date");
+amount = creditnote.get("total");
+status = creditnote.get("status");
+mp.put("Customer_Name",customer);
+mp.put("Credit_Note_Number",creditnumber);
+mp.put("Date_field",date);
+mp.put("Amount",amount);
+mp.put("status",status);
+otherparam = Map();
+info creditnote;
+response = zoho.creator.createRecord("chandan","zoho-books-to-creator","Credit_Note",mp,otherparam,"genirex");
+//<variable>= zoho.creator.v1.createRecord(<ownerName>, <appLinkName>, <formLinkName>, <dataMap>, <connectionlinkName>);
+info response;
