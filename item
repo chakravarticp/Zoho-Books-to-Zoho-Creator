@@ -1,0 +1,12 @@
+mp = Map();
+info item;
+name = item.get("name");
+unit = item.get("unit");
+selling_price = item.get("rate");
+mp.put("Item_Name",name);
+mp.put("Unit",unit);
+mp.put("Unit_Price",selling_price);
+otherparam = Map();
+info name;
+response = zoho.creator.createRecord("chandan","books-add-on","add_items",mp,otherparam,"genirex");
+info response;
