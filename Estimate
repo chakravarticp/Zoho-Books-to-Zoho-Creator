@@ -1,0 +1,20 @@
+
+mp = Map();
+info estimate;
+customer = estimate.get("customer_name");
+m = estimate.get("date");
+number = estimate.get("estimate_number");
+//name = estimate.get("line_items");
+total = estimate.get("total");
+status = estimate.get("status");
+mp.put("Customer_Name",customer);
+mp.put("Pro_Forma_Number",number);
+//mp.put("Items",name);
+mp.put("Amount",total);
+mp.put("Date_field",m);
+mp.put("status",status);
+otherparam = Map();
+info estimate;
+response = zoho.creator.createRecord("chandan","zoho-books-to-creator","Pro_Forma_Invoice",mp,otherparam,"genirex");
+//<variable>= zoho.creator.v1.createRecord(<ownerName>, <appLinkName>, <formLinkName>, <dataMap>, <connectionlinkName>);
+info response;
