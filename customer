@@ -1,0 +1,11 @@
+
+mp = Map();
+info customer;
+customer = customer.get("contact_name");
+//id = customer.get("contact_id");
+mp.put("Customer_Name",customer);
+//mp.put("ID_NUMBER",id);
+otherparam = Map();
+info customer;
+response = zoho.creator.createRecord("anmoljha1212","zoho-books-to-creator","Customer",mp,otherparam,"genirex");
+info response;
