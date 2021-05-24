@@ -1,0 +1,19 @@
+
+mp = Map();
+info invoice;
+name = invoice.get("customer_name");
+m = invoice.get("date");
+number = invoice.get("invoice_number");
+balance = invoice.get("balance");
+total = invoice.get("total");
+//terms = invoice.get("payment_terms");
+mp.put("Customer_Name",name);
+mp.put("Invoice_Number",number);
+mp.put("Amount",total);
+mp.put("Date_field",m);
+mp.put("Balance",balance);
+otherparam = Map();
+info invoice;
+response = zoho.creator.createRecord("chandan","zoho-books-to-creator","Invoice",mp,otherparam,"genirex");
+//<variable>= zoho.creator.v1.createRecord(<ownerName>, <appLinkName>, <formLinkName>, <dataMap>, <connectionlinkName>);
+info response;
