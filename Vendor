@@ -1,0 +1,8 @@
+mp = Map();
+info vendor;
+customer = vendor.get("contact_name");
+mp.put("Vendor_Name",customer);
+otherparam = Map();
+info vendor;
+response = zoho.creator.createRecord("chandan","Books-add-on","add_vendor",mp,otherparam,"genirex");
+info response;
