@@ -7,5 +7,6 @@ mp.put("Customer_Name",customer);
 //mp.put("ID_NUMBER",id);
 otherparam = Map();
 info customer;
-response = zoho.creator.createRecord("anmoljha1212","zoho-books-to-creator","Customer",mp,otherparam,"genirex");
+response = zoho.creator.createRecord("chandan","zoho-books-to-creator","Customer",mp,otherparam,"genirex");
+//<variable>= zoho.creator.v1.createRecord(<ownerName>, <appLinkName>, <formLinkName>, <dataMap>, <connectionlinkName>);
 info response;
